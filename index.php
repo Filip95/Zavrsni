@@ -28,7 +28,7 @@
                     $body = $post['body'];
                     echo substr($body,0,400) . "...";
                 ?></p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="single-post.php?id=<?php echo ($post['id']) ?>" class="btn btn-primary">Read More</a>
                 <hr>
             </div>
             <?php } ?>
