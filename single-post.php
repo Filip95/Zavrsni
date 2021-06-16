@@ -1,4 +1,4 @@
-<?php include('header.php')?>
+<?php include('includes/header.php')?>
        <?php 
        if (isset($_GET['id'])) {
             $sql = "SELECT * FROM posts WHERE id={$_GET['id']}";
@@ -28,18 +28,18 @@
                 <p><?php echo $post['body']?></p>
             </div>
 
-            <?php include('comments.php') ?>
+            <?php include('includes/comments.php') ?>
 
 
         </div>
        <?php
        }
        ?>
-        <?php include('sidebar.php') ?>
+        <?php include('includes/sidebar.php') ?>
 
     </div>
 
 </main>
 
-<?php include('footer.php')?>
+<?php include('includes/footer.php')?>
 

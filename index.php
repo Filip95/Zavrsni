@@ -1,13 +1,13 @@
 
 <?php 
-    include_once('header.php');
+    include_once('includes/header.php');
     ?>
 
 <main role="main" class="container">
     <div class="row">
         <div class="col-sm-8 blog-main">
         <?php 
-            $sql = "SELECT * FROM posts ORDER BY created_at DESC LIMIT 3";
+            $sql = "SELECT * FROM posts ORDER BY created_at DESC LIMIT 5";
             $statement = $connection->prepare($sql);
 
             $statement->execute();
@@ -38,7 +38,7 @@
                 <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
             </nav>
         </div>
-        <?php include('sidebar.php') ?>
+        <?php include('includes/sidebar.php') ?>
     </div>
 </main>
-<?php include('footer.php')?>
+<?php include('includes/footer.php')?>

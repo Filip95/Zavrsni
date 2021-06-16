@@ -21,7 +21,7 @@
 
 <body>
 
-<?php include('header.php') ?> 
+<?php include('includes/header.php') ?> 
 
 <main role="main" class="container">
     <div class="row">
@@ -96,11 +96,11 @@
             </nav>
 
         </div>
-        <?php include('sidebar.php') ?> 
+        <?php include('includes/sidebar.php') ?> 
     </div>
 </main>
 
-<?php include('footer.php') ?> 
+<?php include('includes/footer.php') ?> 
 
 
 </body>
